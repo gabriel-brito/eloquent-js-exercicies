@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>FizzBuzz</title>
+	<style>body{font-family: sans-serif;text-align: center;}</style>
+</head>
+<body>
+	<h1>Look at the console.</h1>
+<script>
+	var tamanho = 8;
+	var chess = "#";
+	var chessWhite = " #";
+	var count = 0;
+		while(count < tamanho){
+			count++;
+			chess += " #";
+			chessWhite += " #";
+				if(count == tamanho){
+					chess += "\n";
+					chessWhite += "\n"
+					console.log(chess + chessWhite + chess + chessWhite + chess + chessWhite + chess + chessWhite);
+
+				};
+		};
+// I know this is a very bad code, but it's the only way I found to make the chess table without seeing others code ;-;
+</script>
+</body>
+</html>

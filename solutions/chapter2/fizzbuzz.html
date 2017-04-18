@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>FizzBuzz</title>
+	<style>body{font-family: sans-serif;text-align: center;}</style>
+</head>
+<body>
+	<h1>Look at the console.</h1>
+<script>
+	var count = 0;
+		while(count<100){
+			count++;
+			if(count % 3 == 0 && count % 5 == 0){
+				console.log("FizzBuzz");
+			} else if(count % 3 == 0){
+				console.log("Fizz");
+			} else if (count % 5 == 0){
+				console.log("Buzz");
+			} else {console.log(count)};
+		};
+</script>
+</body>
+</html>
