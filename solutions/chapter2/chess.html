@@ -7,21 +7,23 @@
 <body>
 	<h1>Look at the console.</h1>
 <script>
-	var tamanho = 8;
-	var chess = "#";
-	var chessWhite = " #";
-	var count = 0;
-		while(count < tamanho){
-			count++;
-			chess += " #";
-			chessWhite += " #";
-				if(count == tamanho){
-					chess += "\n";
-					chessWhite += "\n"
-					console.log(chess + chessWhite + chess + chessWhite + chess + chessWhite + chess + chessWhite);
+	var black = "# ";
+	var white = " #";
+	var spaces = 0;
+	var tamanho = Number(prompt("Qual o tamanho do tabuleiro?"));
 
-				};
-		};
+	for(spaces = 0; spaces < tamanho; spaces++){
+		black += "# ";
+		white += " #";
+	}
+	if(spaces == tamanho){
+		black += "\n";
+		white += "\n"
+		for(var k = 0; k < spaces; k++){
+			console.log(black);
+			console.log(white);
+		}
+	}
 // I know this is a very bad code, but it's the only way I found to make the chess table without seeing others code ;-;
 </script>
 </body>
