@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Couting Beans</title>
+	<meta charset="UTF-8">
+	<style>body{font-family:sans-serif;text-align:center;}</style>
+</head>
+<body>
+	<h1>Look at the console</h1>
+	<p>You can use the function "countChar(argument1, argument2);" to see how many letters of argument2 have on the argument1.</p>
+
+
+<script>
+	function countBs(string){
+		var count = 0;
+		for(var i = 0; i < string.length; i++){
+			if(string[i] == "B"){
+				count++;
+			}
+		};
+		return count;
+	};
+
+	function countChar(str, many){
+		var count = 0;
+		for(var i = 0; i< str.length; i++){
+			if(str[i] == many){
+				count++;
+			}
+		}
+		return count;
+	};
+</script>
+</body>
+</html>
