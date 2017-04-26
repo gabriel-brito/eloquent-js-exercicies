@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Range</title>
+	<meta charset="UTF-8">
+	<style>body{font-family:sans-serif;text-align:center;}</style>
+</head>
+<body>
+	<h1>Look at the console</h1>
+	<p>You can use the function "range(argument1, argument2);" to see how many numbers have from argument1 to argument2</p>
+
+
+<script>
+	function range(start, end){
+		var range = [];
+		var count = 0;
+		for(var i = 0; i < end; i++){
+			count++;
+			range.push(count);
+		}
+		console.log(range);
+	};
+</script>
+</body>
+</html>
